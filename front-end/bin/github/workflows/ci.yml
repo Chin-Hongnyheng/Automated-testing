@@ -1,0 +1,30 @@
+name: Java Junit Testing
+
+on:
+  push:
+    branch: ["lab01"]
+  pull_request:
+    branch: ["lab01"]
+  
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Compile Java code
+        run: |
+          javac -d out -cp "lib/junit-platform-console-standalone-1.13.0-M3.jar" lab01/*.java
+
+      - name: Run JUnit tests
+        run: |
+          java -jar lib/junit-platform-console-standalone-1.13.0-M3.jar \
+            --class-path out \
+            --scan-class-path
