@@ -5,7 +5,7 @@ on:
     branches: ["lab01"]
   pull_request:
     branches: ["lab01"]
-  
+
 jobs:
   test:
     runs-on: windows-latest
@@ -16,17 +16,23 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          distribution: temurin
-          java-version: 21
+          distribution: 'temurin'
+          java-version: '21'
 
       - name: Compile Java code
-        run: |
-          $files = Get-ChildItem -Recurse lab01 -Filter *.java | ForEach-Object FullName
-          javac -d out -cp "lib/junit-platform-console-standalone-1.13.0-M3.jar" $files
         shell: powershell
+        run: |
+          # Use "." if files are in the root, or "lab01" if that folder exists
+          $files = Get-ChildItem -Recurse -Filter *.java | ForEach-Object { $_.FullName }
+          if ($null -eq $files) { 
+            Write-Error "No Java source files found!"
+            exit 1 
+          }
+          javac -d out -cp "lib/junit-platform-console-standalone-1.13.0-M3.jar" $files
 
       - name: Run JUnit tests
+        shell: powershell
         run: |
-          java -jar lib/junit-platform-console-standalone-1.13.0-M3.jar \
-            --class-path out \
+          java -jar lib/junit-platform-console-standalone-1.13.0-M3.jar `
+            --class-path out `
             --scan-class-path
