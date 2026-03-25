@@ -2,9 +2,9 @@ name: Java Junit Testing
 
 on:
   push:
-    branch: ["lab01"]
+    branches: ["lab01"]
   pull_request:
-    branch: ["lab01"]
+    branches: ["lab01"]
   
 jobs:
   test:
@@ -21,7 +21,9 @@ jobs:
 
       - name: Compile Java code
         run: |
-          javac -d out -cp "lib/junit-platform-console-standalone-1.13.0-M3.jar" lab01/*.java
+          $files = Get-ChildItem -Recurse lab01 -Filter *.java | ForEach-Object FullName
+          javac -d out -cp "lib/junit-platform-console-standalone-1.13.0-M3.jar" $files
+        shell: powershell
 
       - name: Run JUnit tests
         run: |
