@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.45.1">
+<file name="D:\I3\Automated Testing\Lab03\test\src\main\java\test\BankAccount.java">
+</file>
+<file name="D:\I3\Automated Testing\Lab03\test\src\main\java\test\Calculator.java">
+</file>
+<file name="D:\I3\Automated Testing\Lab03\test\src\main\java\test\IBankAccount.java">
+</file>
+<file name="D:\I3\Automated Testing\Lab03\test\src\main\java\test\ICalculator.java">
+</file>
+<file name="D:\I3\Automated Testing\Lab03\test\src\main\java\test\java\ip\autotest\App.java">
+</file>
+<file name="D:\I3\Automated Testing\Lab03\test\src\test\java\test\java\ip\BankAccountTest.java">
+</file>
+<file name="D:\I3\Automated Testing\Lab03\test\src\test\java\test\java\ip\CalculatorTest.java">
+</file>
+</checkstyle>
