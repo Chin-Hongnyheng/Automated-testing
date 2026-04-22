@@ -24,6 +24,7 @@ jobs:
           cache: 'maven'
 
       - name: Run tests and generate JaCoCo report
+        working-directory: test
         run: mvn clean test jacoco:report
 
       - name: Upload JaCoCo coverage report
@@ -31,4 +32,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: jacoco-report
-          path: target/site/jacoco/
+          path: test/target/site/jacoco/
