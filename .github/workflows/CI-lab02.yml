@@ -3,10 +3,10 @@ name: Java CI for lab02
 on:
   push:
     branches:
-      - 'lab02'
+      - 'Lab-02'
   pull_request:
     branches:
-      - 'lab02'
+      - 'Lab-02'
 
 jobs:
   build-and-test:
