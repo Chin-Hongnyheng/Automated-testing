@@ -12,6 +12,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void setup() {
+
         playwright = Playwright.create();
 
         browser = playwright.chromium().launch(
@@ -21,8 +22,10 @@ public class BaseTest {
         context = browser.newContext();
         page = context.newPage();
 
-        page.navigate(
-                "file:///home/runner/work/Automated%20Testing/Lab04/playwright-demo/src/main/java/lab04/pages/login.html");
+        String path = System.getProperty("user.dir")
+                + "/src/test/resources/login.html";
+
+        page.navigate("file://" + path);
     }
 
     @AfterMethod
@@ -30,11 +33,5 @@ public class BaseTest {
         context.close();
         browser.close();
         playwright.close();
-    }
-
-    // SAME ROLE as Selenium screenshot method
-    public void takeScreenshot(String name) {
-        page.screenshot(new Page.ScreenshotOptions()
-                .setPath(java.nio.file.Paths.get("screenshots/" + name + ".png")));
     }
 }
