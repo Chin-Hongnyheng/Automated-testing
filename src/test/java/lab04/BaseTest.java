@@ -23,7 +23,7 @@ public class BaseTest {
         page = context.newPage();
 
         String path = System.getProperty("user.dir")
-                + "/src/test/resources/login.html";
+                + "/src/main/java/lab04/resources/login.html";
 
         page.navigate("file://" + path);
     }
