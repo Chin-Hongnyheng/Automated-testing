@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Lab3 Suite" parallel="classes" thread-count="4">
+
+    <test name="Tests">
+        <classes>
+            <class name="com.lab03.LoginTest"/>
+            <class name="com.lab03.api.UserApiTest"/>
+            <class name="com.lab03.api.UserCreateTest"/>
+            <class name="com.lab03.api.UserGetTest"/>
+            <class name="com.lab03.api.SchemaTest"/>
+        </classes>
+    </test>
+
+</suite>
