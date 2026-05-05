@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-05T22:31:02 ICT" name="Surefire suite" finished-at="2026-05-05T22:31:20 ICT" duration-ms="18273">
+  <suite started-at="2026-05-05T22:38:28 ICT" name="Surefire suite" finished-at="2026-05-05T22:38:46 ICT" duration-ms="17255">
     <groups>
     </groups>
-    <test started-at="2026-05-05T22:31:02 ICT" name="Surefire test" finished-at="2026-05-05T22:31:20 ICT" duration-ms="18273">
+    <test started-at="2026-05-05T22:38:28 ICT" name="Surefire test" finished-at="2026-05-05T22:38:46 ICT" duration-ms="17255">
       <class name="com.lab03.api.SchemaTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.api.SchemaTest@17c1bced]" started-at="2026-05-05T22:31:02 ICT" name="setup" finished-at="2026-05-05T22:31:03 ICT" duration-ms="561" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.api.SchemaTest@17c1bced]" started-at="2026-05-05T22:38:28 ICT" name="setup" finished-at="2026-05-05T22:38:29 ICT" duration-ms="596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="schemaTest()[pri:0, instance:com.lab03.api.SchemaTest@17c1bced]" started-at="2026-05-05T22:31:03 ICT" name="schemaTest" finished-at="2026-05-05T22:31:05 ICT" duration-ms="2622" status="PASS">
+        <test-method signature="schemaTest()[pri:0, instance:com.lab03.api.SchemaTest@17c1bced]" started-at="2026-05-05T22:38:29 ICT" name="schemaTest" finished-at="2026-05-05T22:38:32 ICT" duration-ms="2681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaTest -->
       </class> <!-- com.lab03.api.SchemaTest -->
       <class name="com.lab03.api.UserApiTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.api.UserApiTest@2d9d4f9d]" started-at="2026-05-05T22:31:05 ICT" name="setup" finished-at="2026-05-05T22:31:05 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.api.UserApiTest@2d9d4f9d]" started-at="2026-05-05T22:38:32 ICT" name="setup" finished-at="2026-05-05T22:38:32 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getUserTest()[pri:0, instance:com.lab03.api.UserApiTest@2d9d4f9d]" started-at="2026-05-05T22:31:05 ICT" name="getUserTest" finished-at="2026-05-05T22:31:06 ICT" duration-ms="1161" status="PASS">
+        <test-method signature="getUserTest()[pri:0, instance:com.lab03.api.UserApiTest@2d9d4f9d]" started-at="2026-05-05T22:38:32 ICT" name="getUserTest" finished-at="2026-05-05T22:38:33 ICT" duration-ms="1398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserTest -->
       </class> <!-- com.lab03.api.UserApiTest -->
       <class name="com.lab03.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:08 ICT" name="setup" finished-at="2026-05-05T22:31:12 ICT" duration-ms="3485" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:35 ICT" name="setup" finished-at="2026-05-05T22:38:38 ICT" duration-ms="2276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:12 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T22:31:13 ICT" duration-ms="1209" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:38 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T22:38:39 ICT" duration-ms="1138" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:13 ICT" name="teardown" finished-at="2026-05-05T22:31:13 ICT" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:39 ICT" name="teardown" finished-at="2026-05-05T22:38:39 ICT" duration-ms="284" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,11 +63,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:13 ICT" name="setup" finished-at="2026-05-05T22:31:14 ICT" duration-ms="1087" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:39 ICT" name="setup" finished-at="2026-05-05T22:38:40 ICT" duration-ms="1021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:14 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T22:31:15 ICT" duration-ms="1118" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:40 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T22:38:41 ICT" duration-ms="1071" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:15 ICT" name="teardown" finished-at="2026-05-05T22:31:16 ICT" duration-ms="471" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:41 ICT" name="teardown" finished-at="2026-05-05T22:38:41 ICT" duration-ms="333" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,11 +99,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:16 ICT" name="setup" finished-at="2026-05-05T22:31:17 ICT" duration-ms="1064" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:41 ICT" name="setup" finished-at="2026-05-05T22:38:42 ICT" duration-ms="1001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:17 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T22:31:18 ICT" duration-ms="986" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:42 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T22:38:43 ICT" duration-ms="921" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,7 +124,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:18 ICT" name="teardown" finished-at="2026-05-05T22:31:18 ICT" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:43 ICT" name="teardown" finished-at="2026-05-05T22:38:44 ICT" duration-ms="286" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,11 +135,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:18 ICT" name="setup" finished-at="2026-05-05T22:31:19 ICT" duration-ms="853" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:44 ICT" name="setup" finished-at="2026-05-05T22:38:45 ICT" duration-ms="931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:19 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T22:31:20 ICT" duration-ms="957" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:45 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T22:38:45 ICT" duration-ms="889" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,7 +160,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:31:20 ICT" name="teardown" finished-at="2026-05-05T22:31:20 ICT" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.lab03.LoginTest@53ca01a2]" started-at="2026-05-05T22:38:45 ICT" name="teardown" finished-at="2026-05-05T22:38:46 ICT" duration-ms="290" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -173,21 +173,21 @@
         </test-method> <!-- teardown -->
       </class> <!-- com.lab03.LoginTest -->
       <class name="com.lab03.api.UserCreateTest">
-        <test-method signature="createUser()[pri:0, instance:com.lab03.api.UserCreateTest@4034c28c]" started-at="2026-05-05T22:31:06 ICT" name="createUser" finished-at="2026-05-05T22:31:07 ICT" duration-ms="505" status="PASS">
+        <test-method signature="createUser()[pri:0, instance:com.lab03.api.UserCreateTest@4034c28c]" started-at="2026-05-05T22:38:33 ICT" name="createUser" finished-at="2026-05-05T22:38:34 ICT" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.api.UserCreateTest@4034c28c]" started-at="2026-05-05T22:31:06 ICT" name="setup" finished-at="2026-05-05T22:31:06 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.api.UserCreateTest@4034c28c]" started-at="2026-05-05T22:38:33 ICT" name="setup" finished-at="2026-05-05T22:38:33 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- com.lab03.api.UserCreateTest -->
       <class name="com.lab03.api.UserGetTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.api.UserGetTest@e50a6f6]" started-at="2026-05-05T22:31:07 ICT" name="setup" finished-at="2026-05-05T22:31:07 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.lab03.api.UserGetTest@e50a6f6]" started-at="2026-05-05T22:38:34 ICT" name="setup" finished-at="2026-05-05T22:38:34 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getUserById(int)[pri:0, instance:com.lab03.api.UserGetTest@e50a6f6]" started-at="2026-05-05T22:31:07 ICT" name="getUserById" data-provider="userIds" finished-at="2026-05-05T22:31:08 ICT" duration-ms="502" status="PASS">
+        <test-method signature="getUserById(int)[pri:0, instance:com.lab03.api.UserGetTest@e50a6f6]" started-at="2026-05-05T22:38:34 ICT" name="getUserById" data-provider="userIds" finished-at="2026-05-05T22:38:34 ICT" duration-ms="638" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,7 +198,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserById -->
-        <test-method signature="getUserById(int)[pri:0, instance:com.lab03.api.UserGetTest@e50a6f6]" started-at="2026-05-05T22:31:08 ICT" name="getUserById" data-provider="userIds" finished-at="2026-05-05T22:31:08 ICT" duration-ms="332" status="PASS">
+        <test-method signature="getUserById(int)[pri:0, instance:com.lab03.api.UserGetTest@e50a6f6]" started-at="2026-05-05T22:38:34 ICT" name="getUserById" data-provider="userIds" finished-at="2026-05-05T22:38:35 ICT" duration-ms="426" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -209,7 +209,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserById -->
-        <test-method signature="getUserById(int)[pri:0, instance:com.lab03.api.UserGetTest@e50a6f6]" started-at="2026-05-05T22:31:08 ICT" name="getUserById" data-provider="userIds" finished-at="2026-05-05T22:31:08 ICT" duration-ms="280" status="PASS">
+        <test-method signature="getUserById(int)[pri:0, instance:com.lab03.api.UserGetTest@e50a6f6]" started-at="2026-05-05T22:38:35 ICT" name="getUserById" data-provider="userIds" finished-at="2026-05-05T22:38:35 ICT" duration-ms="395" status="PASS">
           <params>
             <param index="0">
               <value>

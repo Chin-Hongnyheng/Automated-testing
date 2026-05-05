@@ -3,6 +3,7 @@ package com.lab03;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -20,9 +21,18 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+
+        ChromeOptions options = new ChromeOptions();
+
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
+
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.get("file:///D:/I3/Automated%20Testing/Lab03/selenium-demo/src/main/resources/static/login.html");
+
+        driver.get("file:///home/runner/work/Automated-testing/Automated-testing/src/main/resources/static/login.html");
     }
 
     @AfterMethod
