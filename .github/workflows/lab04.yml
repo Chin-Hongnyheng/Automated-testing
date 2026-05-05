@@ -1,0 +1,41 @@
+name: Java CI for Lab-04
+
+on:
+  push:
+    branches:
+      - 'Lab-04'
+  pull_request:
+    branches:
+      - 'Lab-04'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: 'maven'
+
+      - name: Run API tests (TestNG)
+        run: mvn clean test
+
+      - name: Upload TestNG / Surefire Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: target/surefire-reports/
+
+      - name: Upload HTML report (if exists)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-html-report
+          path: target/site/

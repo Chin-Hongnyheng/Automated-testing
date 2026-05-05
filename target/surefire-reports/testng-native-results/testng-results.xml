@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-05T23:44:30 ICT" name="Surefire suite" finished-at="2026-05-05T23:44:54 ICT" duration-ms="24108">
+    <groups>
+    </groups>
+    <test started-at="2026-05-05T23:44:30 ICT" name="Surefire test" finished-at="2026-05-05T23:44:54 ICT" duration-ms="24108">
+      <class name="lab04.api.UserGetTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab04.api.UserGetTest@16267862]" started-at="2026-05-05T23:44:48 ICT" name="setup" finished-at="2026-05-05T23:44:48 ICT" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getUserById(int)[pri:0, instance:lab04.api.UserGetTest@16267862]" started-at="2026-05-05T23:44:48 ICT" name="getUserById" data-provider="userIds" finished-at="2026-05-05T23:44:48 ICT" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserById -->
+        <test-method signature="getUserById(int)[pri:0, instance:lab04.api.UserGetTest@16267862]" started-at="2026-05-05T23:44:48 ICT" name="getUserById" data-provider="userIds" finished-at="2026-05-05T23:44:49 ICT" duration-ms="181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserById -->
+        <test-method signature="getUserById(int)[pri:0, instance:lab04.api.UserGetTest@16267862]" started-at="2026-05-05T23:44:49 ICT" name="getUserById" data-provider="userIds" finished-at="2026-05-05T23:44:49 ICT" duration-ms="197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserById -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lab04.api.UserGetTest@16267862]" started-at="2026-05-05T23:44:49 ICT" name="tearDown" finished-at="2026-05-05T23:44:49 ICT" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- lab04.api.UserGetTest -->
+      <class name="lab04.api.SchemaTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab04.api.SchemaTest@314c508a]" started-at="2026-05-05T23:44:30 ICT" name="setup" finished-at="2026-05-05T23:44:44 ICT" duration-ms="14083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="schemaTest()[pri:0, instance:lab04.api.SchemaTest@314c508a]" started-at="2026-05-05T23:44:44 ICT" name="schemaTest" finished-at="2026-05-05T23:44:45 ICT" duration-ms="578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lab04.api.SchemaTest@314c508a]" started-at="2026-05-05T23:44:45 ICT" name="tearDown" finished-at="2026-05-05T23:44:45 ICT" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- lab04.api.SchemaTest -->
+      <class name="lab04.api.UserCreateTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab04.api.UserCreateTest@6b67034]" started-at="2026-05-05T23:44:46 ICT" name="setup" finished-at="2026-05-05T23:44:46 ICT" duration-ms="578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createUser()[pri:0, instance:lab04.api.UserCreateTest@6b67034]" started-at="2026-05-05T23:44:46 ICT" name="createUser" finished-at="2026-05-05T23:44:48 ICT" duration-ms="1031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lab04.api.UserCreateTest@6b67034]" started-at="2026-05-05T23:44:48 ICT" name="tearDown" finished-at="2026-05-05T23:44:48 ICT" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- lab04.api.UserCreateTest -->
+      <class name="lab04.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:49 ICT" name="setup" finished-at="2026-05-05T23:44:50 ICT" duration-ms="1348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:50 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T23:44:50 ICT" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:50 ICT" name="teardown" finished-at="2026-05-05T23:44:50 ICT" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:50 ICT" name="setup" finished-at="2026-05-05T23:44:51 ICT" duration-ms="1025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:51 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T23:44:52 ICT" duration-ms="234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FAILED]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:52 ICT" name="teardown" finished-at="2026-05-05T23:44:52 ICT" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:52 ICT" name="setup" finished-at="2026-05-05T23:44:53 ICT" duration-ms="979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:53 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T23:44:53 ICT" duration-ms="229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FAILED]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:53 ICT" name="teardown" finished-at="2026-05-05T23:44:53 ICT" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:53 ICT" name="setup" finished-at="2026-05-05T23:44:54 ICT" duration-ms="964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:54 ICT" name="testLogin" data-provider="loginData" finished-at="2026-05-05T23:44:54 ICT" duration-ms="214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FAILED]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lab04.LoginTest@71248c21]" started-at="2026-05-05T23:44:54 ICT" name="teardown" finished-at="2026-05-05T23:44:54 ICT" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- lab04.LoginTest -->
+      <class name="lab04.api.UserApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lab04.api.UserApiTest@10b48321]" started-at="2026-05-05T23:44:45 ICT" name="setup" finished-at="2026-05-05T23:44:45 ICT" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getUserTest()[pri:0, instance:lab04.api.UserApiTest@10b48321]" started-at="2026-05-05T23:44:45 ICT" name="getUserTest" finished-at="2026-05-05T23:44:46 ICT" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lab04.api.UserApiTest@10b48321]" started-at="2026-05-05T23:44:46 ICT" name="tearDown" finished-at="2026-05-05T23:44:46 ICT" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- lab04.api.UserApiTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

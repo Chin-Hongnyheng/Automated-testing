@@ -1,0 +1,9 @@
+lab04\api\UserApiTest.class
+lab04\AppTest.class
+lab04\LoginTest.class
+lab04\api\UserCreateTest.class
+lab04\api\UserGetTest.class
+lab04\api\BaseAPITest.class
+lab04\utils\ScreenshotUtil.class
+lab04\BaseTest.class
+lab04\api\SchemaTest.class
