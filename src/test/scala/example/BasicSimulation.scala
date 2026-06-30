@@ -1,33 +1,41 @@
-package example
-
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
+import scala.concurrent.duration._
 
 class BasicSimulation extends Simulation {
 
-  // Load VU count from system properties
-  // Reference: https://docs.gatling.io/guides/passing-parameters/
-  val vu: Int = Integer.getInteger("vu", 1)
-
-  // Define HTTP configuration
-  // Reference: https://docs.gatling.io/reference/script/protocols/http/protocol/
   val httpProtocol = http
     .baseUrl("https://api-ecomm.gatling.io")
     .acceptHeader("application/json")
     .userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
 
-  // Define scenario
-  // Reference: https://docs.gatling.io/reference/script/core/scenario/
-  private val scenario1 = scenario("Scenario 1")
-    .exec(http("Session").get("/session"))
+  val users = csv("users.csv").circular
 
-  // Define assertions
-  // Reference: https://docs.gatling.io/reference/script/core/assertions/
-  private val assertion = global.failedRequests.count.lt(1)
+  val scn = scenario("Browse and login")
+    .exec(
+      http("HomePage")
+        .get("https://ecomm.gatling.io")
+        .check(status.in(200, 304))
+    )
+    .pause(1, 2)
+    .feed(users)
+    .exec(
+      http("Login")
+        .post("/login")
+        .asFormUrlEncoded
+        .formParam("username", "#{username}")
+        .formParam("password", "#{password}")
+        .check(status.is(200))
+    )
 
-  // Define injection profile and execute the test
-  // Reference: https://docs.gatling.io/reference/script/core/injection/
   setUp(
-    scenario1.inject(atOnceUsers(vu))
-  ).assertions(assertion).protocols(httpProtocol)
+    scn.inject(
+      rampUsers(10000).during(30.seconds),
+      constantUsersPerSec(100.0 / 30).during(2.minutes)
+    )
+  ).protocols(httpProtocol)
+   .assertions(
+     global.responseTime.percentile3.lt(800),
+     global.successfulRequests.percent.gt(99)
+   )
 }

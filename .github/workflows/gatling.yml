@@ -1,0 +1,35 @@
+name: Gatling Load Test
+
+on:
+  push:
+    branches: [main, lab06]
+  pull_request:
+    branches: [main, lab06]
+  workflow_dispatch:
+
+jobs:
+  load-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: "17"
+          distribution: "temurin"
+          cache: maven
+
+      - name: Run Gatling simulation
+        run: mvn gatling:test --no-transfer-progress
+        continue-on-error: true
+
+      - name: Upload Gatling report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gatling-report-${{ github.run_number }}
+          path: target/gatling/
+          retention-days: 90
