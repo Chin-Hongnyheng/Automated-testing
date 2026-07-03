@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register · Private Cloud Storage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f3eb;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .card {
+        background: white;
+        padding: 24px;
+        border-radius: 16px;
+        width: min(420px, 92vw);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+      }
+      h1 {
+        margin-top: 0;
+      }
+      form {
+        display: grid;
+        gap: 10px;
+      }
+      input,
+      button {
+        padding: 10px 12px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        font: inherit;
+      }
+      button {
+        background: #e36b2c;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      a {
+        color: #0e7a86;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Create Account</h1>
+      <form method="post" action="/register">
+        <input name="email" placeholder="Email" required />
+        <input
+          name="password"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <input name="displayName" placeholder="Display name" required />
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have one? <a href="/login">Login</a></p>
+    </div>
+  </body>
+</html>
